@@ -5,7 +5,7 @@ const Seneca = require('seneca')
 const SenecaMsgTest = require('seneca-msg-test')
 const ProviderMessages = require('./provider.messages').default
 
-
+const { Maintain } = require('@seneca/maintain')
 
 describe('provider', () => {
 
@@ -44,3 +44,4 @@ describe('provider', () => {
 
 })
 
+Maintain()
