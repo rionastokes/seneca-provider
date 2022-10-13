@@ -19,6 +19,14 @@ to handle key management and other shared tasks.
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
 | ---------------------------------------------------- | --------------------------------------------------------------------------------------- |
 
+## Quick Example
+
+```js
+// Setup - get the key value (<SECRET>) separately from a vault or
+// environment variable.
+Seneca().use('provider')
+```
+
 ## Install
 
 ```sh
@@ -68,6 +76,23 @@ function MyPlugin(options) {
 }
 ```
 
+## Provider Plugins
+
+- [@seneca/hubspot-provider](https://github.com/senecajs/seneca-hubspot-provider) - Seneca plugin that provides access to the HubSpot API.
+- [@seneca/eventbrite-provider](https://github.com/senecajs/seneca-eventbrite-provider) - Seneca provider for the eventbrite.com API.
+- [@seneca/gcal-provider](https://github.com/senecajs/seneca-gcal-provider) - Seneca plugin that provides access to the Google Calendar API.
+- [@seneca/github-provider](https://github.com/senecajs/seneca-github-provider) - Seneca plugin that provides access to the GitHub API.
+- [@seneca/gitlab-provider](https://github.com/senecajs/seneca-gitlab-provider) - Seneca plugin that provides access to the GitLab API.
+- [@seneca/nordigen-provider](https://github.com/senecajs/seneca-nordigen-provider) - Seneca provider for the nordigen API
+- [@seneca/notion-provider](https://github.com/senecajs/seneca-notion-provider) - Seneca plugin that provides access to the Notion.so API.
+- [@seneca/salesforce-provider](https://github.com/senecajs/seneca-salesforce-provider) - Seneca plugin that provides access to the SalesForce API.
+- [@seneca/stytch-provider](https://github.com/senecajs/seneca-stytch-provider) - Seneca plugin that provides access to the Stytch API.
+- [@seneca/trello-provider](https://github.com/senecajs/seneca-trello-provider) - Seneca plugin that provides access to the Trello API.
+
+# Write Your Own Provider
+
+- [seneca-example-provider](https://github.com/senecajs/seneca-example-provider) - Example Provider Plugin starting point
+
 <!--START:options-->
 
 ### Options
@@ -93,8 +118,18 @@ seneca.use('provider', { name: value, ... })
 
 ### Action Patterns
 
+<<<<<<< HEAD
+
 - [sys:provider,get:key](#-sysprovidergetkey-)
-- [sys:provider,list:provider](#-sysproviderlistprovider-)
+- # [sys:provider,list:provider](#-sysproviderlistprovider-)
+
+## Action Patterns
+
+- [get:key,sys:provider](#-getkeysysprovider-)
+- [get:keymap,sys:provider](#-getkeymapsysprovider-)
+- [list:provider,sys:provider](#-listprovidersysprovider-)
+
+> > > > > > > b8d195a7b56cac3e9d66fa023aba7a91ff0e0a4a
 
 <!--END:action-list-->
 
@@ -102,13 +137,39 @@ seneca.use('provider', { name: value, ... })
 
 ### Action Descriptions
 
+<<<<<<< HEAD
+
 #### &laquo; `sys:provider,get:key` &raquo;
+
+=======
+
+## Action Descriptions
+
+### &laquo; `get:key,sys:provider` &raquo;
+
+> > > > > > > b8d195a7b56cac3e9d66fa023aba7a91ff0e0a4a
 
 Get the value for a specific provider and key name.
 
 ---
 
+<<<<<<< HEAD
+
 #### &laquo; `sys:provider,list:provider` &raquo;
+
+=======
+
+---
+
+### &laquo; `get:keymap,sys:provider` &raquo;
+
+No description provided.
+
+---
+
+### &laquo; `list:provider,sys:provider` &raquo;
+
+> > > > > > > b8d195a7b56cac3e9d66fa023aba7a91ff0e0a4a
 
 List all the providers and their key names.
 
